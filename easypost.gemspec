@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   spec.require_path  = 'lib'
 
-  spec.add_dependency('rest-client', '~> 1.4')
+  spec.add_dependency('rest-client', '>= 1.4', '< 3.0')
   spec.add_dependency('multi_json', '>= 1.0.4', '< 2')
   spec.add_development_dependency('rspec', "~> 2.13.0")
 end
